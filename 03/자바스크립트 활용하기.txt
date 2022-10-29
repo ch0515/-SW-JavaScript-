@@ -1,0 +1,26 @@
+주사위 게임
+var dice = Math.floor(Math.random() * 6) + 1;
+0~6까지 랜덤 숫자 출력 0~ 6을 내림 + 1
+(+1하면 0도 나오니까)
+
+소수 출력
+function isPrime(n){
+	var divisor = 2; // 2부터 나누기 시작
+	while(n > divisor){ // n이 나누는 수보다 클 때까지
+		if(n % divisor === 0){ // n과 나누는 수가 나누어 떨어지면
+		 return false;
+	}else{
+		divisor++; // 나누어 떨어지지 않는다면 나누는 수 1증가
+	}
+   } return true;
+}
+
+문자열 거꾸로 출력하기
+function reverse(str){
+	var reverStr = ''; //빈 문자열
+	for(var i = str.length - 1; i >= 0; i--){
+	  reverStr = reverStr + str.charAt(i); // str의 i번째 문자를 빈 문자열에 추가
+	} retur reverStr;
+}
+console.log(reverse('Hello'));
+인덱스는 0부터시작하므로 str.length - 1 해야함
