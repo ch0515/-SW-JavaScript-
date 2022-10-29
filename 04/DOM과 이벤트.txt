@@ -1,0 +1,18 @@
+- DOM이란?
+문서 객체 모델
+객체 지향 모델로써 구조화된 문서를 표현하는 방식
+- Document 객체
+웹페이지를 의미함
+웹 페이지에 존재하는 HTML 요소에 접근하고 할 때는
+반드시 Document 객체부터 시작해야 함
+
+HTML요소의 선택
+document.getElementById() - 해당 아이디의 요소를 선택
+document.getElementByClassName() - 해당 클래스에 속한 요소를 모두 선택
+document.getElementByName() - 해당 name 속성값을 가지는 요소를 모두 선택
+document.querySelectorAll() - 해당 선택자로 선택되는 요소를 모두 선택
+document.querySelector() - 해당 선택자로 선택되는 요소를 1개 선택
+
+HTML 요소의 생성
+document.createElement() - 지정된 HTML요소를 생성
+document.write() - HTML 출력 스트림을 통해 텍스트를 출력
